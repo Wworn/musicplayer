@@ -10,13 +10,8 @@ confirm_install() {
     echo "************************************"
     read -p "Write 'yes' to confirm: " confirm
     if [[ "$confirm" == "yes" ]]; then
-        # Actualizar e instalar yt-dlp y mpv
-        sudo apt update -y
-        sudo apt install -y mpv
-        sudo apt install -y yt-dlp
-        sudo apt install -y python
-        sudo apt install -y pip
-        
+        # instalar yt-dlp y mpv
+
         # Para termux
         pkg install mpv
         pkg install python
@@ -35,6 +30,12 @@ if ! command -v yt-dlp &> /dev/null || ! command -v mpv &> /dev/null; then
 fi
 
 echo -e "\n\033[1;31m"
+echo "██╗    ██╗██████╗ ██████╗ ███╗   ██╗ ██████╗██╗  ██╗"
+echo "██║    ██║██╔══██╗╚════██╗████╗  ██║██╔════╝██║  ██║"
+echo "██║ █╗ ██║██████╔╝ █████╔╝██╔██╗ ██║██║     ███████║"
+echo "██║███╗██║██╔══██╗ ╚═══██╗██║╚██╗██║██║     ██╔══██║"
+echo "╚███╔███╔╝██║  ██║██████╔╝██║ ╚████║╚██████╗██║  ██║"
+echo " ╚══╝╚══╝ ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝"
 echo "************************************"
 echo "*        SEARCH YOUR MUSIC :       *"
 echo "************************************"
